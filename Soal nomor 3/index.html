@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function cetakPola(x) {
+            for (var i = 1; i <= x; i++) {
+                for (var j = i; j <= 10; j++) {
+                    document.write("_");
+                }
+                for (var k = 1; k <= i; k++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+            document.write("DUMBWAYSID<br>");
+
+            for (var i = 1; i <= x; i++) {
+                for (var j = 1; j <= i; j++) {
+                    document.write("_");
+                }
+                for (var k = i; k <= x; k++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+        cetakPola(10);
+    </script>
+</body>
+
+</html>
